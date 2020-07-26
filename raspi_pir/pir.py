@@ -13,7 +13,7 @@ class PIR(MqttSensor):
 
     NAME = 'PIR'
     TRAPPER = 'rpi.pir-state'
-    PIN = 7
+    PIN = 23
 
     sensor_state = 0
     previous_state = 0
