@@ -3,9 +3,19 @@ RPi.PIR
 
 PIR sensor state monitor, completely written in Python.
 
-RPi.PIR is using PIR sensor with Raspberry Pi GPIO. Software might work with other sensors as well but have not been tested.
+RPi.PIR is using PIR sensor with Raspberry Pi GPIO.
 
-To connect to Raspberry Pi plug into GPIO PIN 7 (default) and POWER PIN. Install and execute raspi-pir and it should work. Alternatively you can user different PIN and execute raspi-pir with parameter: ``raspi-pir --pin pin_number``.
+To connect to Raspberry Pi plug PIR into GPIO PIN 4 (default) and POWER PIN. Install and execute raspi-pir and it
+should work. Alternatively you can user different PIN and execute raspi-pir with parameter:
+``raspi-pir --pin pin_number``.
+
+.. image:: doc/RPi.PIR.png
+
+RPi.PIR supports number of parameters and also configuration file. For more details see ``raspi-pir --help`` or sample
+config.
+
+Sensor is based on `RPi.Sensor <https://github.com/ricco386/RPi.Sensor/>`_ library, which make base for implementing
+different types of sensors in Python.
 
 Pre-Installation requirements
 -----------------------------
@@ -18,9 +28,20 @@ Pre-Installation requirements
 Installation
 ------------
 
+- Install the latest released version using pip::
+
+    pip install https://github.com/ricco386/RPi.PIR/zipball/master
+
+- Alternatively install latest released version from pypi::
+
+    pip install --upgrade RPi.PIR
+
+Development
+-----------
+
 - Clone repository::
 
-    git clone git@github.com:ricco386/RPi.git
+    git clone git@github.com:ricco386/RPi.PIR.git
 
 - Go to RPi.PIR directory::
 
@@ -44,7 +65,7 @@ Systemd scripts should be run under **default Raspberry Pi user** (pi), scripts 
 
 **Dependencies:**
 
-- `RPi.Sensor <https://pypi.python.org/pypi/RPi.Sensor>`_ (0.5.0+)
+- `RPi.Sensor <https://pypi.python.org/pypi/RPi.Sensor>`_ (0.5.3+)
 
 Usage
 -----
@@ -63,4 +84,4 @@ In directory `zabbix_template` there is a Zabbix template that can be imported t
 License
 -------
 
-For more information see the `LICENSE <https://github.com/ricco386/RPi/blob/master/RPi.PIR/LICENSE>`_ file.
+For more information see the `LICENSE <https://github.com/ricco386/RPi.PIR/blob/master/LICENSE>`_ file.
