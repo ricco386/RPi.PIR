@@ -29,7 +29,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        if [ -f raspi_sensor/development.txt ]; then pip install -r raspi_sensor/development.txt; fi
+        if [ -f requirements/development.txt ]; then pip install -r requirements/development.txt; fi
         pip freeze
     - name: Lint with flake8
       run: |
