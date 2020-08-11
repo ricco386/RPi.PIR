@@ -14,7 +14,7 @@ raspi-pir with parameter: ``raspi-pir --pin pin_number``.
 RPi.PIR supports number of parameters and also configuration file. For more details see ``raspi-pir --help`` or sample
 config.
 
-Sensor is based on `RPi.Sensor <https://github.com/ricco386/RPi.Sensor/>`_ library, which make base for implementing
+Sensor is based on `RPi.Sensor <https://github.com/ricco386/RPi.Sensor/>`__ library, which make base for implementing
 different types of sensors in Python.
 
 Pre-Installation requirements
@@ -74,7 +74,7 @@ You have to create a `.sensor.cfg` file and place into `/home/pi/.sensor.cfg` yo
 Zabbix support
 --------------
 
-In directory `zabbix_template` there is a Zabbix template that can be imported to Zabbix and monitor systemd process if it is running and how much memorry it consumes. It also supports Zabbix trapper `rpi.pir-state` that can receive a sensor state changes.
+In directory `zabbix_template` there is a Zabbix template that can be imported to Zabbix and monitor systemd process if it is running and how much memory it consumes. It also supports Zabbix trapper `rpi.pir-state` that can receive a sensor state changes.
 
 
 License
